@@ -18,10 +18,13 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
    git clone https://github.com/username/StoreTestTask.git
    cd StoreTestTask
 2. Install dependencies:
+   ```sh
    dotnet restore
 3. Apply database migrations:
+   ```sh
    dotnet ef database update
 4. Run the application:
+   ```sh
    dotnet run
 5. Swagger will automatically open for testing the application.
 
@@ -30,7 +33,6 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
    Input in Swagger date: 2024-03-05
    Expected Response:
    ```md
-   ```json
    [
      {
        "id": 1,
@@ -42,7 +44,6 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
    Input in Swagger days: 5
    Expected Response:
    ```md
-   ```json
    [
      {
        "id": 1,
@@ -59,8 +60,7 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
 5. Test: GET /api/clients/popular-categories/{clientId}
    Input in Swagger clientId: 1
    Expected Response:
-   ```m
-   ```json
+   ```md
    [
      {
        "category": "Electronics",
