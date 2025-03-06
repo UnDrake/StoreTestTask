@@ -29,8 +29,8 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
 5. Swagger will automatically open for testing the application.
 
 ## Test Data for API Calls
-1. Test GET /api/clients/birthdays
-   Input in Swagger date: 2024-03-05
+1. Test GET /api/clients/birthdays  
+   Input in Swagger date: 2024-03-05  
    Expected Response:
    ```md
    [
@@ -40,8 +40,8 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
      }
    ]
 
-3. Test GET /api/clients/recent-buyers
-   Input in Swagger days: 5
+2. Test GET /api/clients/recent-buyers   
+   Input in Swagger days: 5  
    Expected Response:
    ```md
    [
@@ -57,8 +57,8 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
      }
    ]
 
-5. Test: GET /api/clients/popular-categories/{clientId}
-   Input in Swagger clientId: 1
+3. Test: GET /api/clients/popular-categories/{clientId}  
+   Input in Swagger clientId: 1  
    Expected Response:
    ```md
    [
