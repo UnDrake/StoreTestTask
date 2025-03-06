@@ -15,7 +15,7 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
 ## Setup & Run
 1. Clone the repository:
    ```sh
-   git clone https://github.com/username/StoreTestTask.git
+   git clone https://github.com/UnDrake/StoreTestTask.git
    cd StoreTestTask
 2. Install dependencies:
    ```sh
@@ -26,7 +26,9 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
 4. Run the application:
    ```sh
    dotnet run
-5. Swagger will automatically open for testing the application.
+5. Open Swagger for testing:
+   Go to: http://localhost:5225/swagger/index.html
+   (or https://localhost:7205/swagger/index.html if running with HTTPS)
 
 ## Test Data for API Calls
 1. Test GET /api/clients/birthdays  
