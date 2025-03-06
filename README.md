@@ -26,8 +26,8 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
 4. Run the application:
    ```sh
    dotnet run
-5. Open Swagger for testing:
-   Go to: http://localhost:5225/swagger/index.html
+5. Open Swagger for testing:  
+   Go to: http://localhost:5225/swagger/index.html  
    (or https://localhost:7205/swagger/index.html if running with HTTPS)
 
 ## Test Data for API Calls
