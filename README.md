@@ -16,7 +16,8 @@ This is a .NET Core Web API for managing a store's customers, products, and purc
 1. Clone the repository:
    ```sh
    git clone https://github.com/UnDrake/StoreTestTask.git
-   cd StoreTestTask
+   cd StoreTestTask\StoreTestTask
+
 2. Install dependencies:
    ```sh
    dotnet restore
