@@ -21,12 +21,16 @@ namespace StoreTestTask.Data.Repository
                 .ToListAsync();
         }
 
-        public async Task<IEnumerable<Client>> GetRecentBuyersAsync(DateTime cutoffDate)
+        public async Task<IEnumerable<ClientPurchaseInfo>> GetRecentBuyersAsync(DateTime cutoffDate)
         {
             return await _context.Purchases
                 .Where(p => p.Date >= cutoffDate)
-                .Select(p => p.Client)
-                .Distinct()
+                .GroupBy(p => p.ClientId)
+                .Select(g => new ClientPurchaseInfo
+                {
+                    Client = g.First().Client,
+                    LastPurchaseDate = g.Max(p => p.Date)
+                })
                 .ToListAsync();
         }
 

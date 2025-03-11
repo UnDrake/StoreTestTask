@@ -23,7 +23,13 @@ namespace StoreTestTask.Data.Services
         {
             var cutoffDate = DateTime.UtcNow.AddDays(-days);
             var clients = await _clientRepository.GetRecentBuyersAsync(cutoffDate);
-            return clients.Select(c => new RecentBuyerViewModel { Id = c.Id, FullName = c.FullName, LastPurchaseDate = cutoffDate });
+
+            return clients.Select(c => new RecentBuyerViewModel
+            {
+                Id = c.Client.Id,
+                FullName = c.Client.FullName,
+                LastPurchaseDate = c.LastPurchaseDate
+            });
         }
 
         public async Task<IEnumerable<PopularClientCategoryViewModel>> GetPopularCategoriesAsync(int clientId)
